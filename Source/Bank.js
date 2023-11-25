@@ -88,7 +88,7 @@ const Bank = ({navigation}) => {
                     style={{width:'350px',border:'1px solid skyblue', height:'80px', borderRadius:'10px',marginLeft:'15px'}}
                     onChangeText={(noidung)=>setNoiDung(noidung)}
                     value= {noiDung}
-                    placeholder="Nhập số tiền"
+                    placeholder="Nhập dung chuyển tiền"
                     />
                 </View>
             </View>
