@@ -7,14 +7,21 @@ import ViewBank from './Source/ViewBank';
 import Bank from './Source/Bank';
 import BankSucces from './Source/BankSucces';
 import Login from './Source/Login';
+import Order from './Source/Order';
+import Item from './Source/Item';
+import Phone from './Source/Phone';
+import ThanhToan from './Source/ThanhToan';
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
    <NavigationContainer>
-    <Stack.Navigator screenOptions={{headerShown :false }}>
+    <Stack.Navigator screenOptions={{headerShown : false }}>
      <Stack.Screen name="Login" component={Login}/>
-      <Stack.Screen name="ScreenHome" component={Screen1}/>
       <Stack.Screen name="TrangChu" component={TrangChu}/> 
+      <Stack.Screen name="Order" component={Order}/>
+      <Stack.Screen name="Item" component={Item} />
+      <Stack.Screen name="Phone" component={Phone} />
+      <Stack.Screen name="ThanhToan" component={ThanhToan} />
       <Stack.Screen name="ViewBank" component={ViewBank}/>
       <Stack.Screen name="Bank" component={Bank}/>
       <Stack.Screen name="BankSucces" component={BankSucces}/>

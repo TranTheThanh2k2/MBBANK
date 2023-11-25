@@ -61,7 +61,8 @@ const TrangChu = ({route}) => {
                         </Pressable>
                     </View>
                     <View style={{width:'100px', height:'80px',marginRight:'20px',border:'1px solid gray',alignItems:'center',justifyContent:'center'}}>
-                        <Pressable style={{alignItems:'center'}}>
+                        <Pressable onPress={()=>{nav.navigate('Phone')}}
+                        style={{alignItems:'center'}}>
                             <Image
                                 style={{width:'35px',height:'35px',resizeMode:'contain'}} 
                                 source={require('/assets/mobile.png')}/>
@@ -80,7 +81,7 @@ const TrangChu = ({route}) => {
                 <View style={{width:'100%',flexDirection:'row',flexWrap:'wrap',marginTop:'20px'}}>
                     <View style={{width:'100px',marginLeft:'20px',marginRight:'20px', height:'80px',border:'1px solid gray',alignItems:'center',justifyContent:'center'}}>
                         <Pressable
-                            onPress={()=>{nav.navigate('ViewBank')}}
+                            onPress={()=>{nav.navigate('ThanhToan')}}
                         >
                             <Foundation style={{textAlign:'center'}} name="clipboard-notes" size={30} color="blue" />
                             <Text>Thanh toán</Text>
@@ -93,7 +94,9 @@ const TrangChu = ({route}) => {
                         </Pressable>
                     </View>
                     <View style={{width:'100px', height:'80px',border:'1px solid gray',alignItems:'center',justifyContent:'center'}}>
-                        <Pressable style={{alignItems:'center'}}>
+                        <Pressable
+                         onPress={()=>{nav.navigate('Order')}}
+                         style={{alignItems:'center'}}>
                             <Entypo name="credit-card" size={30} color="blue" style={{textAlign:'center'}} />
                             <Text style={{textAlign:'center',fontSize:'15px'}}>Dịch vụ thẻ</Text>
                         </Pressable>
